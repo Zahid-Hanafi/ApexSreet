@@ -9,7 +9,7 @@ html {
       font-family: 'Arial', sans-serif;
     }
 
-    /* Color scheme */
+
     :root {
       --primary: #000000;
       --secondary: #34495e;
@@ -24,7 +24,7 @@ html {
 	  height: 100vh;
     }
 
-    /* Sidebar styles */
+
     .sidebar {
       height: 100%;
       width: 0;
@@ -53,7 +53,7 @@ html {
       padding-left: 35px;
     }
 
-    /* Table styles */
+
     .main-table {
       width: 100%;
       border-collapse: collapse;
@@ -64,7 +64,7 @@ html {
       padding: 15px;
     }
 
-    /* Header styles */
+
     .header-row {
       background-color: var(--primary);
       color: white;
@@ -88,7 +88,7 @@ html {
 }
 
 
-    /* Promotion banner */
+
     .promo-banner {
       background: linear-gradient(45deg, #169A9D, #0F7173);
       color: white;
@@ -96,7 +96,7 @@ html {
     }
 
 
-    /* Product grid */
+
     .product-grid {
       width: 100%;
       border-collapse: collapse;
@@ -1152,7 +1152,7 @@ html {
       background-color: #169A9D;
     }
 
-/* Footer styles */
+
 .footer-table {
     width: 100%;
     background-color: var(--primary);
@@ -1182,9 +1182,9 @@ html {
 .footer-list a {
     color: white;
     text-decoration: none;
-    position: relative; /* Enable positioning for the arrow */
+    position: relative; 
     transition: color 0.3s ease;
-    padding-right: 20px; /* Add space for the arrow */
+    padding-right: 20px; 
 }
 
 .footer-list a:hover {
@@ -1192,22 +1192,22 @@ html {
 }
 
 .footer-list a::after {
-    content: ""; /* Empty content for the arrow */
+    content: ""; 
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     border: solid transparent;
-    border-width: 6px 0 6px 8px; /* Arrow shape */
-    border-left-color: transparent; /* Default hidden */
+    border-width: 6px 0 6px 8px; 
+    border-left-color: transparent; 
     transition: border-left-color 0.3s ease;
 }
 
 .footer-list a:hover::after {
-    border-left-color: #169A9D; /* Visible arrow on hover */
+    border-left-color: #169A9D; 
 }
 
-/* Social icons */
+
 .social-icons a {
     color: white;
     font-size: 24px;
@@ -1220,7 +1220,7 @@ html {
 }
 
 
-    /* Scroll to top button */
+
     .scroll-top {
       position: fixed;
       bottom: 20px;
@@ -1242,7 +1242,7 @@ html {
       background-color: #169A9D;
     }
 
-    /* Menu button */
+
     .menu-btn {
       background: none;
       border: none;
@@ -1300,8 +1300,8 @@ html {
 }
 
 a.lightbox {
-  text-decoration: none; /* Removes underline */
-  color: inherit; /* Keeps the text color consistent */
+  text-decoration: none; 
+  color: inherit;
 }
 
 .animated-image2 {
@@ -1341,10 +1341,10 @@ a.lightbox {
 
 @keyframes slide-in-up {
     0% {
-        bottom: -500px; /* Starts below the viewport */
+        bottom: -500px; 
     }
     100% {
-        bottom: 0; /* Ends in its original position */
+        bottom: 0; 
     }
 }
 
@@ -1457,107 +1457,107 @@ a.lightbox {
 }
 
 .slideshow-container {
-  width: 100%; /* Full width */
-  max-width: 1000px; /* Optional: set max-width */
-  height: 500px; /* Set height */
+  width: 100%; 
+  max-width: 1000px; 
+  height: 500px; 
   position: relative;
   margin: auto;
   overflow: hidden;
   background: black;
   
-  /* Add a gradient border effect */
+ 
   border: 5px solid;
   border-image: linear-gradient(45deg, #0F7173, #169A9D) 1;
   
-  /* Add a shadow effect */
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 
-  /* Smooth transitions for hover effects */
+ 
   transition: transform 0.5s, box-shadow 0.5s;
 
-  /* Hover animation */
+
   &:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
+    transform: scale(1.02);
     box-shadow: 0 15px 40px #169A9D;
   }
 }
 
 .slide img {
   width: 100%;
-  height: 100%; /* Make the image fill the container */
-  object-fit: cover; /* Ensures proper scaling without distortion */
+  height: 100%; 
+  object-fit: cover; 
   
-  /* Add an animation for smooth sliding effects */
+
   animation: slide-animation 10s infinite;
   
-  /* Apply a subtle filter for enhanced visuals */
+
   filter: brightness(90%) saturate(120%);
   transition: filter 0.5s;
 
-  /* Add a hover effect to make the image pop */
+
   &:hover {
     filter: brightness(100%) saturate(140%);
   }
 }
 
-/* Keyframes for sliding effect */
+
 @keyframes slide-animation {
   0%, 100% {
-    transform: scale(1); /* Normal size */
+    transform: scale(1); 
   }
   50% {
-    transform: scale(1.45); /* Slight zoom at midpoint */
+    transform: scale(1.45); 
   }
 }
 
-/* Container for the marquee */
+
 .image-marquee-container {
   width: 1310px;
-  height: 300px; /* Adjust the height of the marquee */
+  height: 300px; 
   overflow: hidden;
   position: relative;
-  margin-top: 1px; /* Space from top */
-  margin-bottom: 1px; /* Space from bottom */
+  margin-top: 1px; 
+  margin-bottom: 1px; 
   display: flex;
-  align-items: center; /* Vertically center images */
+  align-items: center; 
   background: linear-gradient(45deg, #0F7173, #169A9D);
-  border-radius: 10px; /* Rounded corners for a cleaner look */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border: 2px solid #eee;
 }
 
-/* The scrolling effect of images */
+
 .image-marquee {
   display: flex;
-  animation: marquee 80s linear infinite; /* Smooth animation for continuous scroll */
+  animation: marquee 80s linear infinite;
 }
 
 .marquee-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* Prevent shrinking */
-  margin-right: -10px; /* Space between images */
+  flex-shrink: 0; 
+  margin-right: -10px; 
 }
 
 .marquee-item img {
-  width: 250px; /* Set width for each image */
-  height: 250px; /* Maintain aspect ratio */
-  transition: transform 0.3s ease; /* Smooth effect on hover */
-  border-radius: 8px; /* Rounded corners for images */
+  width: 250px; 
+  height: 250px; 
+  transition: transform 0.3s ease; 
+  border-radius: 8px; 
 }
 
 .marquee-item img:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
 
-/* Keyframes for the animation */
+
 @keyframes marquee {
   0% {
-    transform: translateX(-100%); /* Start off screen to the right */
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(12%); /* Move off screen to the left */
+    transform: translateX(12%);
   }
 }
 
@@ -1745,7 +1745,7 @@ a.lightbox {
 	
 
 	/* -------------------------------------------------MEMBERSHIP--------------------------------------------- */	
-      /* Hero Section Animation */
+
 	 
 :root {
   --primary: #1a1a1a; 
@@ -1791,7 +1791,7 @@ table {
   animation: fadeIn 1s ease-out;
 }
 
-/* Welcome Offer */
+
 .welcome-offer {
   background: linear-gradient(45deg, var(--secondary), var(--accent));
   padding: 2rem;
