@@ -1,15 +1,9 @@
-/* ---------------------PART AAINII--------------------------------------------- */
-/* ---------------------PART AAINII--------------------------------------------- */
-/* ---------------------PART AAINII--------------------------------------------- */
-/* ---------------------SAMBUNG BAWAH LINE NI----------------------------------- */
-
-// Function to toggle the sidebar
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
 }
 
-// Function to scroll to the top smoothly
+
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -17,7 +11,7 @@ function scrollToTop() {
   });
 }
 
-// Show/hide the scroll-to-top button based on scroll position
+
 window.onscroll = function () {
   const scrollBtn = document.querySelector(".scroll-top");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -27,10 +21,9 @@ window.onscroll = function () {
   }
 };
 
-// Countdown Timer
     function updateCountdown() {
       function setTargetTime() {
-        // Set a new target time (example: 48 hours from now)
+      
         return new Date().getTime() + 48 * 60 * 60 * 1000;
       }
 
@@ -47,20 +40,20 @@ window.onscroll = function () {
           document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
           document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         } else {
-          // Reset the target time and continue
+         
           targetTime = setTargetTime();
         }
       }
 
       let targetTime = setTargetTime();
       update();
-      const timer = setInterval(update, 1000);  // Update every second
+      const timer = setInterval(update, 1000);  
     }
 
-    // Start the countdown when the page loads
+ 
     window.onload = updateCountdown;
 
-// Function to send the email and show the success message
+
 function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -70,24 +63,24 @@ function handleFormSubmit(event) {
   const phone = document.getElementById('phone').value.trim();
   const address = document.getElementById('address').value.trim();
 
-  // Validate required fields
+
   if (!firstName || !email || !membership) {
     alert('Please fill in all required fields.');
     return;
   }
 
-  // Validate email format
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert('Please enter a valid email address.');
     return;
   }
 
- // Show success message with animation
+
 const existingMsg = document.querySelector('.success-msg');
 if (existingMsg) existingMsg.remove();
 
-// Create a new success message element
+
 const successMsg = document.createElement('div');
 successMsg.className = 'success-msg';
 successMsg.style.cssText = `
@@ -104,13 +97,13 @@ successMsg.style.cssText = `
   animation: fadeIn 0.8s ease-in-out, bounce 0.8s 0.5s forwards;
 `;
 
-// Add a message text
+
 successMsg.textContent = '🎉 Registration Successful! Welcome to ApexStreet Elite! 🎉';
 
-// Append the success message to the form
+
 event.target.appendChild(successMsg);
 
-// Animation keyframes for fade-in and bounce
+
 const styleSheet = document.styleSheets[0];
 styleSheet.insertRule(`
   @keyframes fadeIn {
@@ -127,28 +120,28 @@ styleSheet.insertRule(`
   }
 `, styleSheet.cssRules.length);
 
-  // Prepare the email body
+ 
   const subject = 'ApexStreet Registration - ' + firstName;
   const body = `Hello,\n\nYou have successfully registered for ApexStreet Elite!\n\nMembership: ${membership}\nFirst Name: ${firstName}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}`;
   const mailtoLink = `mailto:nabilahaini36@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-  // Open the email client with pre-filled details
+
   window.location.href = mailtoLink;
 }
 
-// Add event listener to the form submission
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.register-form');
   form.addEventListener('submit', handleFormSubmit);
 });
 
-// Function to toggle the sidebar
+
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
 }
 
-// Function to scroll to the top smoothly
+
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -156,7 +149,7 @@ function scrollToTop() {
   });
 }
 
-// Show/hide the scroll-to-top button based on scroll position
+
 window.onscroll = function () {
   const scrollBtn = document.querySelector(".scroll-top");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -166,7 +159,7 @@ window.onscroll = function () {
   }
 };
 
-// Function to reveal elements when they are in view
+
 function revealElementsOnScroll() {
   const welcomeBanner = document.getElementById("welcomeBanner");
   const bannerTitle = document.getElementById("bannerTitle");
@@ -184,15 +177,15 @@ function revealElementsOnScroll() {
   });
 }
 
-// Add event listener for scroll to handle element reveal
+
 window.addEventListener("scroll", revealElementsOnScroll);
 
-// Call the function initially to check if elements are already in view
+
 revealElementsOnScroll();
 
 
 
-// Add event listeners for hover effect on review cards
+
 document.addEventListener("DOMContentLoaded", () => {
   const reviewCards = document.querySelectorAll(".review-card");
   reviewCards.forEach((card) => {
