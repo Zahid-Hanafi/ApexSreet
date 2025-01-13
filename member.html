@@ -1,0 +1,294 @@
+<html>
+<head>
+    <title>Membership - ApexStreet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="png" href="Images/logo.png" sizes="512x512">
+</head>
+<body>
+ 
+  <div class="sidebar" id="sidebar">
+    <button onclick="toggleSidebar()" style="position:absolute; top:10px; right:10px; background:none; border:none; color:white; font-size:24px; cursor:pointer;">&times;</button>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="arrival.html"><i class="fas fa-tshirt"></i> New Arrivals</a>
+    <a href="product.html"><i class="fas fa-tags"></i> Our Products</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+    <a href="member.html"><i class="fas fa-users"></i> Membership</a>
+  </div>
+ 
+<table class="main-table">
+	<tr class="header-row">
+		<td width="10%">
+			<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+		</td>
+		<td width="80%">
+			<h1 class="brand-name" /*style="border: 2px solid red;"*/>ApexStreet</h1>
+		</td>
+		<td width="10%">
+        <div style="text-align:right;" >
+			<i class="fas fa-shopping-cart" style="font-size:24px; margin-right:15px; cursor:pointer;"></i>
+			<i class="fas fa-user" style="font-size:24px; cursor:pointer;"></i>
+        </div>
+		</td>
+    </tr>
+
+    <tr class="promo-banner">
+      <td colspan="3">
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+         🎉 New Year Sale! Enjoy 10% OFF on all items! | 💥 Exclusive Offer: 15% OFF for New Customers! | 🛒 Shop Now and Save Big! | 🚚 Free Shipping for Orders Above RM 50! 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- Adds space between repetitions -->
+          🎉 New Year Sale! Enjoy 10% OFF on all items! | 💥 Exclusive Offer: 15% OFF for New Customers! | 🛒 Shop Now and Save Big! | 🚚 Free Shipping for Orders Above RM 50!
+		  🎉 New Year Sale! Enjoy 10% OFF on all items! | 💥 Exclusive Offer: 15% OFF for New Customers! | 🛒 Shop Now and Save Big! | 🚚 Free Shipping for Orders Above RM 50! 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- Adds space between repetitions -->
+          🎉 New Year Sale! Enjoy 10% OFF on all items! | 💥 Exclusive Offer: 15% OFF for New Customers! | 🛒 Shop Now and Save Big! | 🚚 Free Shipping for Orders Above RM 50!
+        </marquee>
+      </td>
+    </tr>
+
+<tr>
+	<td colspan="3" style="padding: 0;">
+		<table style="width: 100%; border-collapse: collapse;">
+  
+            
+<tr>
+  <td width="60%">
+    <div class="welcome-banner" id="welcomeBanner">
+      <h1 id="bannerTitle" style="font-size: 3em; margin-bottom: 20px;" align="center">Welcome to ApexStreet Elite</h1>
+      <p id="bannerTitle2"style="font-size: 1.2em;" align="center">Join our exclusive membership program and unlock premium benefits</p>               
+    </div>
+  </td>
+</tr>
+
+<tr>
+	<td width="60%">
+    <div class="welcome-offer">
+        <h2>Limited Time Welcome Offer</h2>
+        <p style="font-size: 1.2em; margin: 10px 0;">Join now and receive an exclusive welcome package worth RM 500!</p>
+        <div class="countdown-timer">
+          <div class="countdown-box">
+            <div class="countdown-number" id="hours">48</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="minutes">30</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="seconds">60</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+        <ol style="list-style: none; padding: 0; margin: 20px 0;">
+          <li><i class="fas fa-gift"></i> Welcome Gift Box</li>
+          <li><i class="fas fa-tag"></i> First Purchase 25% OFF</li>
+          <li><i class="fas fa-star"></i> 2000 Bonus Points</li>
+        </ol>
+	</div>
+	</td>
+</tr>
+
+<tr>
+<td>
+   <table style="width: 100%;">
+   <tr>
+    <td style="width: 33%; padding: 15px;">
+        <div class="membership-card">
+			<div class="tier-title">Silver</div>
+				<div class="level-indicator">
+                <div class="level-dot active"></div>
+                <div class="level-dot"></div>
+                <div class="level-dot"></div>
+                </div>
+                <div class="price">RM 99/year</div>
+                    <ol>
+                    <li>5% Discount on all items</li>
+                    <li> Free shipping on orders above RM 100</li>
+                    <li> Early access to sales</li>
+                    <li> Birthday voucher RM 20</li>
+                    </ol>
+        </div>
+    </td>
+    
+	<td style="width: 33%; padding: 15px;">
+        <div class="membership-card shine-effect">
+        <span class="popular-badge">Most Popular</span>
+            <div class="tier-title">Gold</div>
+            <div class="level-indicator">
+            <div class="level-dot active"></div>
+            <div class="level-dot active"></div>
+            <div class="level-dot"></div>
+            </div>
+            <div class="price">RM 199/year</div>
+                <ol>
+                <li>10% Discount on all items</li>
+                <li>Free shipping on all orders</li>
+                <li>Priority early access to sales</li>
+                <li>Birthday voucher RM 50</li>
+                <li>Exclusive member events</li>
+                </ol>
+        </div>
+    </td>
+    
+	<td style="width: 33%; padding: 15px;">
+       <div class="membership-card">
+        <div class="tier-title">Platinum</div>
+        <div class="level-indicator">
+        <div class="level-dot active"></div>
+        <div class="level-dot active"></div>
+        <div class="level-dot active"></div>
+        </div>
+        <div class="price">RM 299/year</div>
+            <ol>
+            <li>15% Discount on all items</li>
+            <li>Free priority shipping</li>
+            <li>VIP early access to sales</li>
+            <li>Birthday voucher RM 100</li>
+            <li>Exclusive VIP events</li>
+            <li>Personal stylist service</li>
+            </ol>
+       </div>
+    </td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr name="form1" method="post" action="mailto:nabilahaini36@gmail.com">
+  <td style="padding: 40px 0;">
+    <h2 style="text-align: center; margin-bottom: 30px;">Register Now</h2>
+    <form class="register-form">
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 50%; padding: 10px;">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" class="form-control" required>
+            </div>
+          </td>
+          <td style="width: 50%; padding: 10px;">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" class="form-control" required>
+            </div>
+          </td>
+        </tr>
+		
+        <tr>
+          <td style="padding: 10px;">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+          </td>
+          <td style="padding: 10px;">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-control" required>
+            </div>
+          </td>
+        </tr>
+		
+        <tr>
+          <td style="padding: 10px;">
+            <div class="form-group">
+              <label for="birthdate">Date of Birth</label>
+              <input type="date" id="birthdate" class="form-control" required>
+            </div>
+          </td>
+          <td style="padding: 10px;">
+            <div class="form-group">
+              <label for="membership">Select Membership</label>
+              <select id="membership" class="form-control" required>
+                <option value="">Choose your tier</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+                <option value="platinum">Platinum Membership</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+		
+        <tr>
+          <td colspan="2" style="padding: 10px;">
+            <div class="form-group">
+              <label for="address">Shipping Address</label>
+              <textarea id="address" class="form-control" rows="3" required></textarea>
+            </div>
+          </td>
+        </tr>
+		
+        <tr>
+          <td colspan="2" style="padding: 10px;">
+            <button type="submit" class="submit-btn">Join Now</button>
+          </td>
+        </tr>
+		
+</table>
+	</form>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+   
+    <tr>
+      <td colspan="3">
+        <table class="footer-table" style="border-collapse: collapse; width: 100%;">
+          <tr>
+            <td class="footer-cell" width="25%">
+              <h3 class="footer-heading">About ApexStreet</h3>
+              <p style="line-height:1.6;">Premium Street Wear for the modern professional. Quality, style, and comfort combined.</p>
+              <div class="social-icons" style="margin-top:20px;">
+                <a href="https://www.tiktok.com/@pandagaming._____" target="blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@pandagaming._____" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@pandagaming._____" target="blank"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </td>
+            <td class="footer-cell" width="25%">
+              <h3 class="footer-heading">Quick Links</h3>
+              <ul class="footer-list">
+                <li><a href="product.html#tshirt">T-Shirts</a></li>
+                <li><a href="product.html#hoodie">Hoodies</a></li>
+                <li><a href="product.html#cap">Caps</a></li>
+                <li><a href="product.html#totebag">Tote Bags</a></li>				
+                <li><a href="product.html#badge">Badges</a></li>
+              </ul>
+            </td>
+            <td class="footer-cell" width="25%">
+              <h3 class="footer-heading">Customer Service</h3>
+              <ul class="footer-list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Size Guide</a></li>
+              </ul>
+            </td>
+            <td class="footer-cell" width="25%">
+              <h3 class="footer-heading">Contact Info</h3>
+              <ul class="footer-list">
+                <li><i class="fas fa-phone"></i><a href="#"> 03-94681976</a></li>
+                <li><i class="fas fa-envelope"></i><a href="#"> apexstreet@gmail.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i><a href="#"> Malaysia</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" style="text-align:center; padding:20px; border-top:1px solid rgba(255,255,255,0.1);">
+              &copy; 2025 ApexStreet Enterprise. All rights reserved.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+  <div class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+</body>
+<div id="meteor-shower"></div>
+<script src="scripts2.js"></script>
+</html>

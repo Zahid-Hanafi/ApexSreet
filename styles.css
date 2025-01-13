@@ -1,0 +1,1956 @@
+html {
+  scroll-behavior: smooth;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Color scheme */
+    :root {
+      --primary: #000000;
+      --secondary: #34495e;
+      --accent: #3498db;
+      --light: #ecf0f1;
+      --dark: #000000;
+      --success: #27ae60;
+    }
+
+    body {
+      background-color: var(--light);
+	  height: 100vh;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      background-color: var(--primary);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .sidebar a:hover {
+      background-color: #0F7173;
+      padding-left: 35px;
+    }
+
+    /* Table styles */
+    .main-table {
+      width: 100%;
+      border-collapse: collapse;
+	  height: 500px;
+    }
+
+    .main-table td {
+      padding: 15px;
+    }
+
+    /* Header styles */
+    .header-row {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .brand-name {
+      font-size: 3.5em;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0F7173;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0F7173;
+  }
+}
+
+
+    /* Promotion banner */
+    .promo-banner {
+      background: linear-gradient(45deg, #169A9D, #0F7173);
+      color: white;
+      overflow: hidden;
+    }
+
+
+    /* Product grid */
+    .product-grid {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .product-cell {
+      width: 25%;
+      padding: 20px;
+      text-align: center;
+      vertical-align: top;
+      transition: transform 0.3s ease;
+    }
+
+    .product-cell:hover {
+      transform: translateY(-10px);
+    }
+    /* -----------------------------------------------IMAGES HOVER---------------------------- */
+    .product-image {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('NEW/YEAR OF SNAKE.png');
+	  background-size: cover;
+	  background-position: center;
+      overflow: hidden;
+    }
+	.product-image:hover{
+		background-image: url('NEW/YEAR OF SNAKE (2).png');
+	}
+
+
+    /* ----------------------------------------------- NEXT IMAGES---------------------------- */	
+	.product-image2 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('NEW/YEAR OF SNAKE (3).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image2:hover{
+		background-image: url('NEW/YEAR OF SNAKE (4).png');
+	}
+
+    .product-image2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image3 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('NEW/RONIN CAT.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image3:hover{
+		background-image: url('NEW/RONIN CAT (2).png');
+	}
+
+    .product-image3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image4 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('NEW/SCIENTIFIC REVOLUTION.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image4:hover{
+		background-image: url('NEW/SCIENTIFIC REVOLUTION (2).png');
+	}
+
+    .product-image4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image5 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('NEW/SHUTEN DOUJI.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image5:hover{
+		background-image: url('NEW/SHUTEN DOUJI (2).png');
+	}
+
+    .product-image5 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+		    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image6 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT IVORY EDITION/NEVER STRAY OF PATH.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image6:hover{
+		background-image: url('TSHIRT IVORY EDITION/NEVER STRAY OF PATH (2).png');
+	}
+
+    .product-image6 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+		    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image7 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE RAVEN EDITION/APEX ERROR.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image7:hover{
+		background-image: url('HOODIE RAVEN EDITION/APEX ERROR (2).png');
+	}
+
+    .product-image7 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+		    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image8 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('CAP/CAP (3).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image8:hover{
+		background-image: url('CAP/CAP (3).png');
+	}
+
+    .product-image8 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+		    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image9 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image9:hover{
+		background-image: url('BADGES/BADGES.png');
+	}
+
+    .product-image9 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+		    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image10 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TOTE BAGS/TOTE BAG.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image10:hover{
+		background-image: url('TOTE BAGS/TOTE BAG.png');
+	}
+
+    .product-image10 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+		    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image11 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT RAVEN EDITION/BEAR BADONKERS.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image11:hover{
+		background-image: url('TSHIRT RAVEN EDITION/BEAR BADONKERS (2).png');
+	}
+
+    .product-image11 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image12 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT RAVEN EDITION/BELIEVER.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image12:hover{
+		background-image: url('TSHIRT RAVEN EDITION/BELIEVER (2).png');
+	}
+
+    .product-image12 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image13 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT RAVEN EDITION/KING APES.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image13:hover{
+		background-image: url('TSHIRT RAVEN EDITION/KING APES (2).png');
+	}
+
+    .product-image13 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image14 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT RAVEN EDITION/ORIGINAL DESIGN.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image14:hover{
+		background-image: url('TSHIRT RAVEN EDITION/ORIGINAL DESIGN (2).png');
+	}
+
+    .product-image14 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image15 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT RAVEN EDITION/PENELOPE ODYSSEY.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image15:hover{
+		background-image: url('TSHIRT RAVEN EDITION/PENELOPE ODYSSEY (2).png');
+	}
+
+    .product-image15 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+				    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image16 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT IVORY EDITION/BURNING SKULL.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image16:hover{
+		background-image: url('TSHIRT IVORY EDITION/BURNING SKULL (2).png');
+	}
+
+    .product-image16 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image17 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT IVORY EDITION/COUPLE DREAM.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image17:hover{
+		background-image: url('TSHIRT IVORY EDITION/COUPLE DREAM (2).png');
+	}
+
+    .product-image17 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image18 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT IVORY EDITION/NEVER STRAY OF PATH.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image18:hover{
+		background-image: url('TSHIRT IVORY EDITION/NEVER STRAY OF PATH (2).png');
+	}
+
+    .product-image18 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image19 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT IVORY EDITION/STREET GRAFITTI.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image19:hover{
+		background-image: url('TSHIRT IVORY EDITION/STREET GRAFITTI (2).png');
+	}
+
+    .product-image19 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image20 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TSHIRT IVORY EDITION/THE RACER.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image20:hover{
+		background-image: url('TSHIRT IVORY EDITION/THE RACER (2).png');
+	}
+
+    .product-image20 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+			    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image21 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE RAVEN EDITION/APEX DREAMERS.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image21:hover{
+		background-image: url('HOODIE RAVEN EDITION/APEX DREAMERS (2).png');
+	}
+
+    .product-image21 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+				    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image22 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE RAVEN EDITION/APEX ERROR.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image22:hover{
+		background-image: url('HOODIE RAVEN EDITION/APEX ERROR (2).png');
+	}
+
+    .product-image22 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+				    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image23 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE RAVEN EDITION/RETRO STYLE.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image23:hover{
+		background-image: url('HOODIE RAVEN EDITION/RETRO STYLE (2).png');
+	}
+
+    .product-image23 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+				    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image24 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE RAVEN EDITION/THE VICTORIOUS.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image24:hover{
+		background-image: url('HOODIE RAVEN EDITION/THE VICTORIOUS (2).png');
+	}
+
+    .product-image24 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+				    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image25 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE RAVEN EDITION/UNLIMITED FORCE.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image25:hover{
+		background-image: url('HOODIE RAVEN EDITION/UNLIMITED FORCE (2).png');
+	}
+
+    .product-image25 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+				    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image26 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE IVORY EDITION/APEX PREDATOR.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image26:hover{
+		background-image: url('HOODIE IVORY EDITION/APEX PREDATOR (2).png');
+	}
+
+    .product-image26 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+					    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image27 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE IVORY EDITION/SIMPLE LIFE.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image27:hover{
+		background-image: url('HOODIE IVORY EDITION/SIMPLE LIFE (2).png');
+	}
+
+    .product-image27 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+					    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image28 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE IVORY EDITION/THE RICHES.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image28:hover{
+		background-image: url('HOODIE IVORY EDITION/THE RICHES (2).png');
+	}
+
+    .product-image28 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+					    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image29 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE IVORY EDITION/UNLIMITED STREET.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image29:hover{
+		background-image: url('HOODIE IVORY EDITION/UNLIMITED STREET (2).png');
+	}
+
+    .product-image29 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+					    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image30 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('HOODIE IVORY EDITION/WHITEROVER.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image30:hover{
+		background-image: url('HOODIE IVORY EDITION/WHITEROVER (2).png');
+	}
+
+    .product-image30 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+						    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image31 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('CAP/CAP.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image31:hover{
+		background-image: url('CAP/CAP.png');
+	}
+
+    .product-image31 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+						    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image32 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('CAP/CAP (5).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image32:hover{
+		background-image: url('CAP/CAP (5).png');
+	}
+
+    .product-image32 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+						    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image33 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('CAP/CAP (4).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image33:hover{
+		background-image: url('CAP/CAP (4).png');
+	}
+
+    .product-image33 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+						    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image34 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('CAP/CAP (3).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image34:hover{
+		background-image: url('CAP/CAP (3).png');
+	}
+
+    .product-image34 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+						    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image35 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('CAP/CAP (2).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image35:hover{
+		background-image: url('CAP/CAP (2).png');
+	}
+
+    .product-image35 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+						    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image36 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TOTE BAGS/TOTE BAG (2).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image36:hover{
+		background-image: url('TOTE BAGS/TOTE BAG (2).png');
+	}
+
+    .product-image36 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image37 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TOTE BAGS/TOTE BAG (3).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image37:hover{
+		background-image: url('TOTE BAGS/TOTE BAG (3).png');
+	}
+
+    .product-image37 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image38 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TOTE BAGS/TOTE BAG (4).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image38:hover{
+		background-image: url('TOTE BAGS/TOTE BAG (4).png');
+	}
+
+    .product-image38 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image39 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TOTE BAGS/TOTE BAG 2.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image39:hover{
+		background-image: url('TOTE BAGS/TOTE BAG 2.png');
+	}
+
+    .product-image39 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image40 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('TOTE BAGS/TOTE BAG.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image40:hover{
+		background-image: url('TOTE BAGS/TOTE BAG.png');
+	}
+
+    .product-image40 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image41 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (6).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image41:hover{
+		background-image: url('BADGES/BADGES (6).png');
+	}
+
+    .product-image41 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image42 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (7).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image42:hover{
+		background-image: url('BADGES/BADGES (7).png');
+	}
+
+    .product-image42 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image43 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (8).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image43:hover{
+		background-image: url('BADGES/BADGES (8).png');
+	}
+
+    .product-image43 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image44 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (9).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image44:hover{
+		background-image: url('BADGES/BADGES (9).png');
+	}
+
+    .product-image44 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image45 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image45:hover{
+		background-image: url('BADGES/BADGES.png');
+	}
+
+    .product-image45 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image46 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (2).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image46:hover{
+		background-image: url('BADGES/BADGES (2).png');
+	}
+
+    .product-image46 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image47 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (3).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image47:hover{
+		background-image: url('BADGES/BADGES (3).png');
+	}
+
+    .product-image47 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image48 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (4).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image48:hover{
+		background-image: url('BADGES/BADGES (4).png');
+	}
+
+    .product-image48 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image49 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/BADGES (5).png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image49:hover{
+		background-image: url('BADGES/BADGES (5).png');
+	}
+
+    .product-image49 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+							    /* ----------------------------------------------- NEXT IMAGES---------------------------- */
+		.product-image50 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 0 auto;
+	  background-image: url('BADGES/99.png');
+	  background-size: cover;
+      overflow: hidden;
+	  background-position: center;
+    }
+	.product-image50:hover{
+		background-image: url('BADGES/99.png');
+	}
+
+    .product-image50 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+	
+    /* -----------------------------------------------IMAGES HOVER END---------------------------- */
+    .product-title {
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: var(--dark);
+    }
+
+    .product-price {
+      color: var(--success);
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .shop-now-btn {
+      display: inline-block;
+      padding: 8px 50px;
+      background-color: #0F7173;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+	  
+    }
+
+    .shop-now-btn:hover {
+      background-color: #169A9D;
+    }
+
+/* Footer styles */
+.footer-table {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+}
+
+.footer-cell {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.footer-heading {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #169A9D;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list a {
+    color: white;
+    text-decoration: none;
+    position: relative; /* Enable positioning for the arrow */
+    transition: color 0.3s ease;
+    padding-right: 20px; /* Add space for the arrow */
+}
+
+.footer-list a:hover {
+    color: #169A9D;
+}
+
+.footer-list a::after {
+    content: ""; /* Empty content for the arrow */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid transparent;
+    border-width: 6px 0 6px 8px; /* Arrow shape */
+    border-left-color: transparent; /* Default hidden */
+    transition: border-left-color 0.3s ease;
+}
+
+.footer-list a:hover::after {
+    border-left-color: #169A9D; /* Visible arrow on hover */
+}
+
+/* Social icons */
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0F7173;
+}
+
+
+    /* Scroll to top button */
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0F7173;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 999;
+    }
+
+    .scroll-top:hover {
+      background-color: #169A9D;
+    }
+
+    /* Menu button */
+    .menu-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-btn:hover {
+      transform: scale(1.1);
+    }
+	
+.lightbox {
+  position: relative;
+  display: inline-block;
+}
+
+.lightbox img {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+a.lightbox {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the text color consistent */
+}
+
+.animated-image2 {
+    position: relative;
+    animation: slide-in-left 1s ease-out;
+    
+}
+
+@keyframes slide-in-left {
+    0% {
+        left: -500px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.animated-image3 {
+    position: relative;
+    animation: slide-in-right 1s ease-out;
+}
+
+
+@keyframes slide-in-right {
+    0% {
+        right: -500px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.animated-image4 {
+    position: relative;
+    animation: slide-in-up 1s ease-out;
+}
+
+@keyframes slide-in-up {
+    0% {
+        bottom: -500px; /* Starts below the viewport */
+    }
+    100% {
+        bottom: 0; /* Ends in its original position */
+    }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  transform: scale(0);
+  animation: zoomIn 2s forwards;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.expand-in {
+  transform: scale(0);
+  animation: expandIn 1s forwards;
+}
+
+@keyframes expandIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+.typing {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 3s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.meteor {
+    position: absolute;
+    background-color: lightblue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: meteorAnimation 1s linear infinite;
+}
+
+@keyframes meteorAnimation {
+    to {
+        transform: translateY(400px) translateX(90%); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        width: 90%;
+    }
+    .header img {
+        width: 150px;
+        height: 120px;
+    }
+}
+
+.slideshow-container {
+  width: 100%; /* Full width */
+  max-width: 1000px; /* Optional: set max-width */
+  height: 500px; /* Set height */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background: black;
+  
+  /* Add a gradient border effect */
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #0F7173, #169A9D) 1;
+  
+  /* Add a shadow effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+
+  /* Smooth transitions for hover effects */
+  transition: transform 0.5s, box-shadow 0.5s;
+
+  /* Hover animation */
+  &:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 15px 40px #169A9D;
+  }
+}
+
+.slide img {
+  width: 100%;
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensures proper scaling without distortion */
+  
+  /* Add an animation for smooth sliding effects */
+  animation: slide-animation 10s infinite;
+  
+  /* Apply a subtle filter for enhanced visuals */
+  filter: brightness(90%) saturate(120%);
+  transition: filter 0.5s;
+
+  /* Add a hover effect to make the image pop */
+  &:hover {
+    filter: brightness(100%) saturate(140%);
+  }
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide-animation {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.45); /* Slight zoom at midpoint */
+  }
+}
+
+/* Container for the marquee */
+.image-marquee-container {
+  width: 1310px;
+  height: 300px; /* Adjust the height of the marquee */
+  overflow: hidden;
+  position: relative;
+  margin-top: 1px; /* Space from top */
+  margin-bottom: 1px; /* Space from bottom */
+  display: flex;
+  align-items: center; /* Vertically center images */
+  background: linear-gradient(45deg, #0F7173, #169A9D);
+  border-radius: 10px; /* Rounded corners for a cleaner look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  border: 2px solid #eee;
+}
+
+/* The scrolling effect of images */
+.image-marquee {
+  display: flex;
+  animation: marquee 80s linear infinite; /* Smooth animation for continuous scroll */
+}
+
+.marquee-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-right: -10px; /* Space between images */
+}
+
+.marquee-item img {
+  width: 250px; /* Set width for each image */
+  height: 250px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth effect on hover */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.marquee-item img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Keyframes for the animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%); /* Start off screen to the right */
+  }
+  100% {
+    transform: translateX(12%); /* Move off screen to the left */
+  }
+}
+
+.scale {
+  transition: transform 0.3s ease, color 0.3s ease; 
+  cursor: pointer;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+  color: #169A9D; /
+  text-shadow: 3px 3px 12px rgba(15, 113, 115, 1); /
+}
+
+	
+	/* ---------------------PART AAINII--------------------------------------------- */
+	/* ---------------------PART AAINII--------------------------------------------- */
+	/* ---------------------ABOUT US--------------------------------------------- */
+	/* ---------------------SAMBUNG BAWAH LINE NI----------------------------------- */
+		.skill2 {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.skill2:hover {
+    transform: scale(1.1);
+}
+    .custom-list {
+        counter-reset: item;
+        list-style-type: none;
+        padding: 20px 40px;
+    }
+
+    .custom-list li {
+        counter-increment: item;
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 40px;
+        line-height: 1.6;
+    }
+
+    .custom-list li::before {
+        content: '';
+        position: absolute;
+        background-image: url(images/bullet1.png);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background-size: contain;
+        left: 0;
+        top: 70%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+    }
+
+    .animated-image2 {
+        position: relative;
+        animation: slide-in-left 1s ease-out;
+    }
+
+    @keyframes slide-in-left {
+        0% {
+            left: -500px;
+        }
+        100% {
+            left: 0;
+        }
+    }
+
+    .animated-image3 {
+        position: relative;
+        animation: slide-in-right 1s ease-out;
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            right: -500px;
+        }
+        100% {
+            right: 0;
+        }
+    }
+
+
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .zoom-in {
+        transform: scale(0);
+        animation: zoomIn 2s forwards;
+    }
+
+    @keyframes zoomIn {
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .pulse {
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .fade-up {
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeUp 1s forwards;
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .expand-in {
+        transform: scale(0);
+        animation: expandIn 1s forwards;
+    }
+
+    @keyframes expandIn {
+        to {
+            transform: scale(1);
+        }
+    }
+
+   .slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    .timeline-item {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(to bottom, #1a237e, #303f9f);
+    }
+
+    .review-card {
+        transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+        transform: translateY(-10px);
+    } 	
+	
+
+	/* -------------------------------------------------MEMBERSHIP--------------------------------------------- */	
+      /* Hero Section Animation */
+	 
+:root {
+  --primary: #1a1a1a; 
+  --secondary: #2c3e50; 
+  --accent: #19b0b3; 
+  --light: #f9f9f9; 
+  --dark: #121212; 
+  --success: #8bc34a; 
+}
+
+
+
+* {
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+.welcome-banner {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#bannerTitle {
+  color: var(--light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  animation: fadeIn 1s ease-out;
+}
+
+#bannerTitle2 {
+  color: var(--light);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 0;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Welcome Offer */
+.welcome-offer {
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+  padding: 2rem;
+  border-radius: 10px;
+  color: var(--light);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.countdown-box {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.countdown-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--light);
+}
+
+.countdown-label {
+  color: var(--light);
+  font-size: 0.9rem;
+}
+
+
+.membership-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.membership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.tier-title {
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--accent);
+  margin: 1rem 0;
+}
+
+.level-indicator {
+  display: flex;
+  gap: 5px;
+  margin: 1rem 0;
+}
+
+.level-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.level-dot.active {
+  background: var(--accent);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: -3rem;
+  background: var(--success);
+  color: white;
+  padding: 0.5rem 3rem;
+  transform: rotate(45deg);
+  font-size: 0.9rem;
+}
+
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid var(--light);
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.submit-btn {
+  background: var(--accent);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shine {
+  to { left: 200%; }
+}
+
+
+@media (max-width: 768px) {
+  .countdown-timer {
+    flex-wrap: wrap;
+  }
+  
+  .countdown-box {
+    min-width: 60px;
+  }
+  
+  .tier-title {
+    font-size: 1.5rem;
+  }
+  
+  .price {
+    font-size: 1.6rem;
+  }
+}
+
+.fade-in2 {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
