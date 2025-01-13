@@ -10,7 +10,7 @@
       });
     }
 
-    // Show/hide scroll to top button
+
     window.onscroll = function() {
       const scrollBtn = document.querySelector('.scroll-top');
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -87,24 +87,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
 
   function showSlides() {
-    slides.forEach((slide) => (slide.style.display = "none")); // Hide all slides
+    slides.forEach((slide) => (slide.style.display = "none")); 
     slideIndex++;
-    if (slideIndex > slides.length) slideIndex = 1; // Loop back to the first slide
-    slides[slideIndex - 1].style.display = "block"; // Display the current slide
-    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    if (slideIndex > slides.length) slideIndex = 1; 
+    slides[slideIndex - 1].style.display = "block"; 
+    setTimeout(showSlides, 3000); 
   }
 
-  showSlides(); // Initialize the slideshow
+  showSlides(); 
 });
 
-// This JavaScript ensures the continuous scrolling of the images.
+
 document.addEventListener("DOMContentLoaded", () => {
   const marquee = document.querySelector(".image-marquee");
   const items = document.querySelectorAll(".marquee-item");
 
-  // Clone the images to create a seamless scroll effect
+
   items.forEach(item => {
-    marquee.appendChild(item.cloneNode(true)); // Clone each item
+    marquee.appendChild(item.cloneNode(true)); 
   });
 });
 
@@ -114,15 +114,12 @@ function toggleSound() {
   
   if (video.muted) {
     video.muted = false;
-    soundButton.textContent = 'Mute'; // Change button text to 'Mute'
+    soundButton.textContent = 'Mute'; 
   } else {
     video.muted = true;
-    soundButton.textContent = 'Unmute'; // Change button text to 'Unmute'
+    soundButton.textContent = 'Unmute'; 
   }
 }
 
-	/* ---------------------PART AAINII--------------------------------------------- */
-	/* ---------------------PART AAINII--------------------------------------------- */
-	/* ---------------------PART AAINII--------------------------------------------- */
-	/* ---------------------SAMBUNG BAWAH LINE NI----------------------------------- */
+
 	
